@@ -3,6 +3,7 @@
     background-image: url('dust.png');
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     height:850px;
+    position: absolute;
 } 
 
 
@@ -44,7 +45,7 @@
     margin: 0%;
     width: 15%;
     padding-left: 20px;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     padding: 50px 0;
     text-align: center;
@@ -66,12 +67,11 @@
    background-color: #ffffff; 
     color: #777777;
     padding: 20px;
-    margin-top: 2%;
     margin-right: 30%;
     margin-left: 30%;
-    position: fixed;
+    position: absolute;
     width: 960px;
-    top: 130px;
+    bottom: 150px;
     left: 0%;   
 }
 img {
@@ -109,9 +109,10 @@ img {
 /* * {box-sizing: border-box;} */
 
 .container {
-  position: relative;
+  position: absolute;
   width: 50%;
   max-width: 300px;
+
 }
 
 
@@ -131,13 +132,14 @@ img {
     margin-bottom: 25px;
       float: left;
       display: table-column;
+      
 
   }
   
   .container {
     position: absolute;
    top: 21opx;
-    width: 40S%;
+    width: 50%;
    padding-left: 10px;
     background-color: #4aaaa5;
     color: white;
@@ -147,10 +149,24 @@ img {
   .text-block {
     position: absolute;
     top: 210px;
-    width: 35%;
+    width: 40%;
    padding-left: 10px;
     background-color: #4aaaa5;
     color: white;
     text-align: center;
   
   }
+
+@media(max-width:959px){
+    .about{
+        font-size: 1.25rem;
+    }
+
+}
+@media(max-width: 400px ){
+     .about{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+}
